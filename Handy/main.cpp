@@ -14,8 +14,8 @@ using namespace cv;
 using namespace std;
 
 int main(int, char**) {
-	VideoCapture videoCapture(0);
-	videoCapture.set(CV_CAP_PROP_SETTINGS, 1);
+  VideoCapture videoCapture("/home/steganstar/Documents/fingerGestureRecognition/testVideos/WIN_20181124_01_08_31_Pro.mp4");
+  //videoCapture.set(CV_CAP_PROP_SETTINGS, 1);
 
 	if (!videoCapture.isOpened()) {
 		cout << "Can't find camera!" << endl;
